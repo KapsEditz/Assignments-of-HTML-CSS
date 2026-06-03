@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+
+    <style>
+       form{
+        background-color: aliceblue;
+        width: 700px;
+        margin: 50px auto;
+        padding: 20px;
+        }
+        textarea{
+            height: 100px;
+            width: 220px;
+        }
+        input{
+            margin: 10px;
+            padding: 10px;
+        }
+        button{
+            width: 120px;
+            margin: auto;
+            padding: 10px;
+        }
+        table{
+            width: 100%;
+            margin: auto;
+        }
+        td{
+            padding: 10px;
+        }
+        
+        input[type="text"], input[type="email"],
+        input[type="password"], input[type="number"]{
+            width: 180px;
+        }
+        
+    </style>
+
+</head>
+
+<body style="background-color: cyan;">
+    <form>
+        <h1 style="text-align: center;">Registration Form</h1>
+        <table>
+            <tr>
+                <td>First Name : <br>
+                    <input type="text" placeholder="Enter First Name">
+                </td> 
+                <td>Last Name : <br>
+                    <input type="text" placeholder="Enter Last Name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email : <br>
+                    <input type="email" placeholder="Enter Email Address"> 
+                </td>
+                <td>Password : <br>
+                    <input type="password"> 
+                </td>
+            </tr>
+    
+            <tr>
+                <td> Age : <br>
+                    <input type="number"> 
+                </td>
+                <td>Gender : <br>
+                    Male <input type="radio" name="Gender"><br>
+                    Female <input type="radio" name="Gender"><br>
+                    Other <input type="radio" name="Gender">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Preferences : <br>
+                        Acrylic Painting <input type="checkbox"><br>
+                        Water Color Painting <input type="checkbox"><br>
+                        Oil Painting <input type="checkbox"><br>
+                </td>
+                <td>Bio <br><textarea placeholder="Share few lines about yourself..."></textarea></td>
+            </tr>
+            
+        </table>
+                <p style="margin-left: 250px;">Select Occupation
+                    <Select> 
+                        <option>Student</option>
+                        <option>Teacher</option>
+                        <option>Intern</option>
+                    </Select>
+                </p>
+            <p style="text-align: center;">
+                <button>RESET</button>
+                <button>SUBMIT</button>
+            </p>
+    </form>
+</body>
+</html>
