@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Title</title>
+</head>
+
+<body class="bg-success">
+    <div class="m-5 p-5 bg-warning" style="width: auto; height: 100%;">
+        <form class="bg-danger-subtle"></form>
+    </div>
+    <p id="p"></p>
+    <script>
+
+        //greatest amoung 2
+        let num1 = 10;
+        let num2 = 20;
+
+        if (num1 > num2) {
+            console.log("Greater number is " + num1);
+        }
+        else {
+            console.log("Greater number is " + num2);
+        }
+
+
+        //largest amoung 3
+        let n1 = 10;
+        let n2 = 30;
+        let n3 = 20;
+
+        if (n1 >= n2 && n1 >= n3) {
+            console.log("Greatest Number is " + n1);
+        }
+        else if (n2 >= n3) {
+            console.log("Greatest number is " + n2);
+        }
+        else {
+            console.log("Greatest number is " + n3);
+        }
+
+        //smallest amoung 3
+        let no1 = 10;
+        let no2 = 30;
+        let no3 = 20;
+
+        if (no1 <= no2 && no1 <= no3) {
+            console.log("Smallest Number is " + no1);
+        }
+        else if (no2 <= no3) {
+            console.log("Smallest number is " + no2);
+        }
+        else {
+            console.log("Smallest number is " + no3);
+        }
+
+
+        //checks type too in "==="
+        let s1 = '5';
+        let s2 = 5;
+        if (s1 === s2) {
+            console.log("Numbers are equal");
+        }
+        else {
+            console.log("Numbers aren't equal");
+        }
+
+
+        //OR operater
+        let o1 = 10;
+        let o2 = 20;
+        if(o1 == o2 || o2 > o1){
+            console.log("Numbers are equal || Number o2 is greater. Even if one condition is true it returns TRUE!");
+        }
+
+        let even = 68;
+        if(even % 2 === 0){
+            console.log("Number is Even!");
+        }
+        else{
+            console.log("Number is Odd!")
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
