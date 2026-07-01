@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+
+    <style>
+        button{
+            display:block;
+            margin:20px auto;
+            padding: 10px;
+            width: 120px;
+            border-radius: 20px;
+            border-color:azure;
+        }
+        fieldset{
+            margin-left: 70px;
+            margin-right: 70px;
+            padding: 20px; 
+            background-color: bisque;
+        }
+        legend{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            background-color: beige;
+        }
+        input{
+            background-color: whitesmoke;
+            border-radius: 20px;
+            border: none;
+        }
+        textarea{
+            background-color: whitesmoke;
+            border: none;
+            border-radius: 10px;
+        }
+        select{
+            background-color: whitesmoke;
+            border: none;
+            border-radius: 10px;
+        }
+        fieldset{
+            border-radius: 20px;
+        }
+        td{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+    </style>
+    
+    <!--Below is for the image before your title on website called as Favicon-->
+    <link rel="icon" href="data:image/png;base64,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">
+
+</head>
+<body>
+
+<form>
+    
+    <h1 style="text-align: center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 35px;"><u>Admission Form</u></h1>
+        
+    <fieldset>
+    <legend>Login Details</legend>
+        <table>
+            <tr>
+                <td>Username: </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td><input type="password"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Mother's Name: </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Father's Name: </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth: </td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Gender </td>   
+                <td><input type="radio" name="Gender">Male <input type="radio" name="Gender"> Female</td>
+            </tr>
+        </table>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Contact Details</legend>
+        <table>
+            <tr>
+                <td>Contact Number: </td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Email ID: </td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Address: </td>
+                <td><textarea style="width: 200px; height: 100px;" placeholder="Enter Address..."></textarea></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><select>
+                        <option>India</option>
+                        <option>Japan</option>
+                        <option>Nepal</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Academic Details</legend>
+            <table>
+                <tr>
+                    <td>10<sup>th</sup>Class Marks: </td>
+                    <td><input type="number"></td>
+                    <td> Board: </td>
+                    <td><input type="text"></td>
+                   <td>School Name: </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>12<sup>th</sup>Class Marks: </td>
+                    <td><input type="number"></td>
+                    <td> Board: </td>
+                    <td><input type="text"></td>
+                    <td>School Name: </td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+    </fieldset>
+
+    <button>Submit</button>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 12</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        form{
+            border: 1px solid black;
+            margin: 20px;
+            margin-top: 30px;
+            width: fit-content;
+        }
+        table,td{
+            padding: 10px;
+        }
+        fieldset{
+            width: 610px;
+            height: 220px;
+        }
+        textarea{
+            width: 100%;
+            height: 100px;
+        }
+        div{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        button{
+            margin: 10px;
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 30%;
+        }
+        h1,p{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Internet Usage Survey</h1>
+        <p>The survey is being conducted to help identify the Internet usage patterns of our customers.</p>
+        <p>Please take a few moments to complete and submit this short form. Thank you for your cooperation.</p>
+        <table>
+
+            <tr>
+                <td>What type of Internet connection do you have? (Select One) </td>
+                <td>
+                    <select>
+                        <option>Dial-up</option>
+                        <option>DSL</option>
+                        <option>High Speed Cable</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>What type of computer do you use most at home?</td>
+                <td>
+                    <input type="radio" name="comp" id="desktop">
+                    <label for="desktop">Desktop</label>
+                    <input type="radio" name="comp" id="Laptop">
+                    <label for="Laptop">Laptop</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>How would you describe your main reason for using the Internet?</td>
+                <td>
+                    <input type="radio" name="internet" id="one">
+                    <label for="one">To do work-related activities</label><br>
+                    <input type="radio" name="internet" id="two">
+                    <label for="two">To do school-related activities</label><br>
+                    <input type="radio" name="internet" id="three">
+                    <label for="three">For entertainment purposes</label><br>
+                    <input type="radio" name="internet" id="four">
+                    <label for="four">Other activities</label><br>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Types of sites visited</legend>
+                        <p>What types of web sites do you access most often?</p>
+                        <p>Check all that apply.</p>
+                        <input type="checkbox" name="selfimp" id="selfimp">
+                        <label for="selfimp">Self Improvement</label><br>
+                        <input type="checkbox" name="entertainment" id="entertainment">
+                        <label for="entertainment">Entertainment</label><br>
+                        <input type="checkbox" name="news" id="news">
+                        <label for="news">News and Sports</label><br>
+                        <input type="checkbox" name="ref" id="ref">
+                        <label for="ref">Reference</label><br>
+                        <input type="checkbox" name="email" id="email">
+                        <label for="email">Email</label><br>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Time spent on Internet</legend><br>
+                        <p>During an average week, how long do you spend online?</p>
+                        <input type="checkbox" name="opt1" id="opt1">
+                        <label for="opt1">0-3 Hours</label><br>
+                        <input type="checkbox" name="opt2" id="opt2">
+                        <label for="opt2">4-6 Hours</label><br>
+                        <input type="checkbox" name="opt3" id="opt3">
+                        <label for="opt3">7-10 Hours</label><br>
+                        <input type="checkbox" name="opt4" id="opt4">
+                        <label for="opt4">11-14 Hours</label><br>
+                        <input type="checkbox" name="opt5" id="opt5">
+                        <label for="opt5">15+ Hours</label><br>
+                    </fieldset>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <p>Please comment on your opinions concerning Internet privacy and safety: </p>
+                    <textarea></textarea>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <label for="fname">First Name : </label>
+                    <input type="text" name="fname" id="fname" style="width: 100%;">
+                </td>
+                <td>
+                    <label for="lname">Last Name : </label>
+                    <input type="text" name="lname" id="lname" style="width: 100%;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="age">Age : </label>
+                    <input type="number" name="age" id="age" style="width: 100%;">
+                </td>
+                <td>
+                    <label for="zip">Zip Code : </label>
+                    <input type="number" name="zip" id="zip" style="width: 100%;">
+                </td>
+            </tr>
+
+        </table>
+
+        <div>
+            <button type="submit">Click to Submit</button>
+            <button type="reset">Clear Form</button>
+        </div>
+            
+    </form>
+</body>
+</html>

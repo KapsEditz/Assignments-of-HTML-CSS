@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Assignment 18</title>
+    <script src="https://kit.fontawesome.com/5483f706e7.js" crossorigin="anonymous"></script>
+    <style>
+        .c1 {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg");
+            background-size: cover;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            align-content: center;
+            border-radius: 20px;
+            box-shadow: 3px 3px 20px grey;
+        }
+
+        .c2 {
+            background-image: url("https://m.media-amazon.com/images/I/618tTX++vvL._AC_UF1000,1000_QL80_.jpg");
+            background-size: cover;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            align-content: center;
+            border-radius: 20px;
+            box-shadow: 3px 3px 20px grey;
+        }
+
+        .c3 {
+            background-image: url("https://images.stockcake.com/public/3/f/d/3fd7180a-2107-44cb-9686-085a9db5893a_large/glowing-jellyfish-immersed-stockcake.jpg");
+            background-size: cover;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            align-content: center;
+            border-radius: 20px;
+            box-shadow: 3px 3px 20px grey;
+        }
+
+        .content {
+            position: absolute;
+            color: white;
+            margin: 10px;
+        }
+
+        .abc {
+            padding-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container mt-5 mb-5">
+
+        <h2>Custom Cards</h2>
+        <hr><br>
+
+        <!-- Cards -->
+        <div class="d-flex justify-content-between flex-wrap gap-3 justify-content-center">
+
+            <div class="c1">
+                <div class="content">
+                    <h2>Short Title, Long Jacket</h2>
+                    <div class="d-flex justify-content-between" style="margin: 25px 10px 0px 0px;">
+                        <div>
+                            <i class="fa-brands fa-bootstrap bg-primary p-1 rounded-circle"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-map-pin"></i>
+                            <span>Earth</span>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>3d</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c2">
+                <div class="content">
+                    <h2>Much longer title that wraps</h2>
+                    <div class="d-flex justify-content-between" style="margin: 25px 10px 0px 0px;">
+                        <div>
+                            <i class="fa-brands fa-bootstrap bg-primary p-1 rounded-circle"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-map-pin"></i>
+                            <span>Pakistan</span>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>4d</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c3">
+                <div class="content">
+                    <h2>Another longer title belongs here</h2>
+                    <div class="d-flex justify-content-between" style="margin: 25px 10px 0px 0px;">
+                        <div>
+                            <i class="fa-brands fa-bootstrap bg-primary p-1 rounded-circle"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-map-pin"></i>
+                            <span>California</span>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>5d</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+    </div>
+    <div class="bg-light container-fluid">
+        <br><br>
+    </div>
+
+
+    <div class="container-fluid">
+        <h2 class="mt-5 container"> Icon Grid
+            <hr>
+        </h2>
+        <div class="d-flex justify-content-between container pt-4">
+
+            <div class="d-flex">
+                <div class="flex-column abc">
+                    <i class="fa-brands fa-bootstrap"></i>
+                </div>
+                <div class="flex-column">
+                    <h5>Featured title</h5>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="flex-column abc">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div class="flex-column">
+                    <h5>Featured title</h5>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="flex-column abc">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div class="flex-column">
+                    <h5>Featured title</h5>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="flex-column abc">
+                    <i class="fa-regular fa-house"></i>
+                </div>
+                <div class="flex-column">
+                    <h5>Featured title</h5>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between container pt-5">
+
+            <div class="d-flex">
+                <div class="flex-column abc">
+                    <i class="fa-solid fa-gauge-high"></i>
+                </div>
+                <div class="flex-column">
+                    <h5>Featured title</h5>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="flex-column abc">
+                    <i class="fa-solid fa-toggle-on"></i>
+                </div>
+                <div class="flex-column">
+                    <h5>Featured title</h5>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="flex-column abc">
+                    <i class="fa-solid fa-map-pin"></i>
+                </div>
+                <div class="flex-column">
+                    <h5>Featured title</h5>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="flex-column abc">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div class="flex-column">
+                    <h5>Featured title</h5>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
