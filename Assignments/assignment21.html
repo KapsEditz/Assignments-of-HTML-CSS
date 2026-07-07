@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/5483f706e7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Clothes Landing Page</title>
+</head>
+
+<style>
+    #page {
+        position: relative;
+    }
+
+    #head-main {
+        background-image: url("https://thumbcdn.123freevectors.com/wp-content/original/164660-abstract-hot-pink-texture-background-design.jpg");
+        position: relative;
+        height: 300px;
+    }
+
+    #main-block {
+        background-color: pink;
+    }
+
+    #cart-button {
+        position: relative;
+        top: -180px;
+        background-color: white;
+        color: pink;
+        box-shadow: 0px 0px 5px rgb(100, 100, 100);
+
+    }
+
+    #grid1 {
+        position: relative;
+        top: -160px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        border-radius: 20px;
+        box-shadow: 0px 9px 20px rgb(100, 100, 100);
+    }
+
+    #grid2 {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 20px;
+    }
+
+    #feature {
+        position: relative;
+    }
+
+    .price {
+        margin-left: 10px;
+    }
+
+    .card {
+        margin-left: 15px;
+        padding-bottom: 15px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgb(150, 150, 150);
+
+    }
+
+    .thumbnail {
+        border-radius: 10px;
+    }
+
+    .footer-part {
+        position: relative;
+        background-color: rgb(30, 30, 30);
+        color: white;
+    }
+
+    .img {
+        height: 80px;
+        width: 80px;
+        margin: 5px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    .img:hover{
+        transform: scale(1.05);
+        transition: .3s;
+    }
+
+    .space {
+        margin-top: -120px;
+    }
+
+    img {
+        border-radius: 5px;
+    }
+
+    .feature-icon {
+        height: 80px;
+        width: 80px;
+        margin: 40px 0px;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        transition: .3s;
+    }
+
+
+    .card:hover {
+        transform: scale(1.025);
+        transition: .3s;
+    }
+
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .option-box{
+        width: 180px;
+    }
+
+    .selectt {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+        text-align: left;
+        padding-left: 3%;
+    }
+
+    .big1:hover{
+        transform: scale(1.025);
+        transition: .3s;
+    }
+
+    .small1:hover{
+        transform: scale(1.05);
+        transition: .3s;
+    }
+
+    .small2:hover{
+        transform: scale(1.25);
+        transition: .3s;
+    }
+
+</style>
+
+<body>
+    <div id="page">
+        <div class="container-fluid" id="head-main">
+            <div class="container">
+                <nav class="navbar navbar-expand-sm">
+                    <!-- // responsive button appears when size of the device is changed -->
+                    <button class="navbar-toggler bg-white" data-bs-toggle="collapse" data-bs-target="mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <button class="btn">
+                        <a href="#" class="navbar-brand text-light">Material Kit Pro</a>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+
+
+                        <ul class="navbar-nav ms-auto">
+
+                            <button class="btn text-light" type="button">
+                                <i class="fa-solid fa-table-cells"></i> Components
+                            </button>
+
+
+                            <div class="dropdown">
+                                <button class="btn text-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-rug"></i> Sections
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="#"> one</a></li>
+                                    <li class="dropdown-item"><a href="#"> two</a></li>
+                                    <li class="dropdown-item"><a href="#"> three</a></li>
+                                    <li class="dropdown-item"><a href="#"> four</a></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="dropdown">
+                                <button class="btn text-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-layer-group"></i> Examples
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="#"> one</a></li>
+                                    <li class="dropdown-item"><a href="#"> two</a></li>
+                                    <li class="dropdown-item"><a href="#"> three</a></li>
+                                    <li class="dropdown-item"><a href="#"> four</a></li>
+                                </ul>
+                            </div>
+
+                            <button class="btn text-light" type="button">
+                                <li class="nav-item"><i class="fa-solid fa-cart-shopping"></i> Buy Now</li>
+                            </button>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div id="main-block" class="container-fluid">
+            <div class="container d-flex justify-content-end">
+                <button class="btn" type="button" id="cart-button">
+                    <i class="fa-solid fa-cart-shopping"></i> 0 Items
+                </button>
+            </div>
+            <div class="container p-5 bg-white" id="grid1">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQayKFZ8HRD1hmZ6xNTgX1kVOkgCyxmaCfHY4tF37JQmFbWkCLRflq-0BqAKFNV_w0zn6ZYzBRiYLjEekjPB9XfKIyN4DaDE4wM_d5pGc71yN2Zhlon6hhx"
+                        style="height: 460px; width: 400px;" class="big1">
+                    <div class="d-flex flex-row mt-2">
+                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTPptprZz2EDhZ4HaUGkponSGMFjXrxaBnfH8mrXkiNKGvfTG1VHGwhy0_iGB9TXfxlCSD1c8uBpbvFbmIghFP1OEhGKp5ZWEVoRcfp_65LfDARne7mTjmC-A"
+                            style="height: 100px; width: 84px;" class="small1">
+                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ7lcAlFD6o1Z8S08HIzr_2TyrrKE9mkQF3EN31xBbQxHCZti5S_0UvsdJhZLqwVMJqRFNNHWYdwSSQPkC5MCC6AGfP7wwJqGFTGJl3VSbqQYr8jcTlmrMqPg"
+                            style="height: 100px; width: 84px; margin-left: 8px;" class="small1">
+                        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSyenD4Uu494laMr-qCA5K_3E35Ip333M9LfXr28o5aGneGvAFQTGLtMMcv8OJQPCSP0HVEm0aPYHXbJgoP18xKht1p1cpaxfKZoQAYks99"
+                            style="height: 100px; width: 84px; margin-left: 8px;" class="small1">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSIY573T8YzN1yY0XFt_g-OHza3LwRD8u_4EwdgEfy1gh3OVAtiJ7xdy-py5XvPS4qN3VD2-K3tc-Dmxm6Oahq3CNHf579_tmWOLBkSanAS"
+                            style="height: 100px; width: 84px; margin-left: 8px;" class="small1">
+                        <button style="border: none; margin-left: 8px; background-color: white;"><i
+                                class="fa-solid fa-angle-right small2"></i></button>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column">
+
+                    <h2>Becky Silk Blazer</h2>
+                    <p style="font-size: larger;">$335</p>
+
+                    <div class="accordion accordion-flush" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">Description</button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolores totam odit
+                                    illum, quos quod consectetur similique nulla, eligendi sed corporis accusamus
+                                    obcaecati voluptatibus suscipit, non aliquam et nisi dicta.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">Designer
+                                    Information</button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, iste ipsa in
+                                    totam eius atque! Voluptate laboriosam adipisci non ipsum saepe veniam rem. Corporis
+                                    molestiae adipisci ex minus aliquid soluta.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">Details
+                                    and
+                                    Care</button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dignissimos molestias
+                                    ratione similique assumenda itaque dolorum rerum temporibus corporis veritatis ea
+                                    repellat quam, quaerat in? Recusandae quo tempora facere a?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="container d-flex justify-content-between">
+                        <div class="dropdown d-flex align-items-start flex-column option-box">
+                            <p>Select Color</p>
+                            <button type="button" class="btn dropdown-toggle selectt" data-bs-toggle="dropdown">
+                                ROSE
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">PINK</a></li>
+                                <li><a class="dropdown-item" href="#">BLUE</a></li>
+                                <li><a class="dropdown-item" href="#">RED</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown d-flex align-items-start flex-column option-box">
+                            <p>Select Size</p>
+                            <button type="button" class="btn dropdown-toggle selectt" data-bs-toggle="dropdown">
+                                SMALL
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">MEDIUM</a></li>
+                                <li><a class="dropdown-item" href="#">LARGE</a></li>
+                                <li><a class="dropdown-item" href="#">X - LARGE</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <button class="btn d-flex flex-row align-self-end align-items-center" type="button"
+                        style="color: white; background-color: deeppink; border-radius: 30px;">Add To Cart <i
+                            class="fa-solid fa-cart-shopping" style="margin-left: 5px;"></i></button>
+                </div>
+            </div>
+
+            <div class="space">
+                <div class="d-flex container" id="feature">
+                    <div class="d-flex flex-column align-items-center m-1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Truck-icon_%281%29.png"
+                            class="feature-icon">
+                        <h4>2 Days Delivery</h4>
+                        <p style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+                            atque eius vel architecto.
+                            Molestias, nobis dolorem, quibusdam atque tempore?</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center m-1">
+                        <img src="https://cdn-icons-png.magnific.com/256/1489/1489596.png" class="feature-icon">
+                        <h4>Refundable Policy</h4>
+                        <p style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+                            atque eius vel architecto.
+                            Molestias, nobis dolorem, quibusdam atque tempore?</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center m-1">
+                        <img src="https://cdn-icons-png.flaticon.com/256/9624/9624283.png" class="feature-icon">
+                        <h4>Popular Item</h4>
+                        <p style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+                            atque eius vel architecto.
+                            Molestias, nobis dolorem, quibusdam atque tempore?</p>
+                    </div>
+                </div>
+                <br><br>
+                <h3 style="text-align: center;">You may also be interested in : </h3>
+                <br><br>
+                <div class="container d-flex justify-content-between">
+
+                    <div class="container card">
+                        <br>
+                        <img class="card-img-top thumbnail"
+                            src="https://fashionjournal.com.au/wp-content/uploads/2022/05/fashion-journal-buying-new-clothes-mob.jpg"
+                            height="350" width="300">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h4 class="card-popular">Trending</h4>
+                            <h3>Dolce Gabana</h3>
+                            <p style="text-align: center;">Dolce & Gabbana's 'Greta tote has been crafted in Italy from
+                                hard-wearing red
+                                texturedleather.</p>
+                        </div>
+                        <div class="d-flex justify-content-between price align-items-center">
+                            <h4>$1,459</h4>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+
+                    <div class="container card">
+                        <br>
+                        <img class="card-img-top thumbnail"
+                            src="https://i.pinimg.com/736x/d9/8d/2e/d98d2eda38c41b887d87fba880ce831b.jpg" height="350"
+                            width="300">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h4 class="card-popular">Popular</h4>
+                            <h3>Balmain</h3>
+                            <p style="text-align: center;">Balmain's mid-rise skinny jeans
+                                are cut with stretch to ensure
+                                they retain their second-skin fit but
+                                move comfortably</p>
+                        </div>
+                        <div class="d-flex justify-content-between price align-items-center">
+                            <h4>$459</h4>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+
+                    <div class="container card">
+                        <br>
+                        <img class="card-img-top thumbnail"
+                            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRGdxRA36RLYJRzUZGTIz9c08KFEwn3s_6mqfe-_04dEw46vqjQJ6sbNJCYd0cQ-Zo3UjniHml3TfJlsDNk8UlVn2V70vPKd4fb9rPSSwC2E5iS3z0DxJt8"
+                            height="350" width="300">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h4 class="card-popular">Popular</h4>
+                            <h3>Balenciaga</h3>
+                            <p style="text-align: center;">Balenciaga's black textured-leather wallet is finished with
+                                the
+                                label's iconic 'Giant' studs.
+                                This is where you can...</p>
+                        </div>
+                        <div class="d-flex justify-content-between price align-items-center">
+                            <h4>$590</h4>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+
+                    <div class="container card">
+                        <br>
+                        <img class="card-img-top thumbnail"
+                            src="https://thevishnu.in/cdn/shop/articles/Hand-Blocked_Cotton_Mul_Long_Kurta.webp?v=1718963663"
+                            height="350" width="300">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h4 class="card-popular">Trending</h4>
+                            <h3>Dolce Gabana</h3>
+                            <p style="text-align: center;">Dolce & Gabbana's 'Greta tote has been crafted in Italy from
+                                hard-wearing red
+                                texturedleather.</p>
+                        </div>
+                        <div class="d-flex justify-content-between price align-items-center">
+                            <h4>$1,459</h4>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <br><br><br>
+            </div>
+
+        </div>
+
+
+        <div class="container-fluid bg-black footer-part">
+            <br>
+            <div class="container" id="grid2">
+
+                <div>
+                    <h4>About Us</h4><br>
+                    <p style="color: rgb(150, 150, 150);">Creative Tim is a startup that creates design tools that make
+                        the web development process faster
+                        and easier.</p>
+                    <p style="color: rgb(150, 150, 150);">We love the web and care deeply for how users interact with a
+                        digital product. We power
+                        businesses and individuals to create better looking web projects around the world.</p>
+                </div>
+
+                <div>
+                    <h4>Social Feed</h4><br>
+                    <div class="d-flex flex-row gap-2">
+                        <div>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div>
+                            <p style="color: rgb(150, 150, 150);">How to handle ethical disagreements with your clients.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row gap-2">
+                        <div>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div>
+                            <p style="color: rgb(150, 150, 150);">The tangible benefits of designing at 1x pixel
+                                density.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row gap-2">
+                        <div>
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div>
+                            <p style="color: rgb(150, 150, 150);">A collection of 25 stunning sites that you can use for
+                                inspiration.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Instagram Feed</h4><br>
+                    <div class="d-flex flex-row">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs6WAy_iqlAwYZfgVJmcGWOc80Q4Vv71s5ZXV4Oc5loqmE6SZlYYz8k-c&s=10"
+                            class="img">
+                        <img src="https://i.pinimg.com/474x/3b/3a/92/3b3a92f0e5f79f4943d2b733515e6659.jpg" class="img">
+                        <img src="https://lyrics.ws/i/img/songs/256/4070.webp" class="img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYpO2dIs0FhTg6Ohy2jT0dGnbMCxp7pGolsG_vLxiQAxvWIDRUxaSZ6vo&s=10"
+                            class="img">
+                    </div>
+                    <div class="d-flex flex-row">
+                        <img src="https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/05/68/41/0568414d-c25e-2ffe-2577-960fcc09308f/20UMGIM09330.rgb.jpg/256x256bb.jpg"
+                            class="img">
+                        <img src="https://c-cf.cdn.smule.com/rs-s-sf-4/arr/e3/82/4073f874-60f5-4e89-b3a5-aea705462fc3.jpg"
+                            class="img">
+                        <img src="https://c-cf.cdn.smule.com/smule-gg-s-sf-bck1/arr/a0/76/13c96e42-fb50-4b78-b8f2-a429d172efa0.jpg"
+                            class="img">
+                        <img src="https://a.wattpad.com/useravatar/titsarefun.256.947282.jpg" class="img">
+                    </div>
+                </div>
+            </div>
+            <hr style="background-color: white;" class="container">
+
+
+            <div class="container d-flex flex-row justify-content-between align-items-center">
+                <div>
+                    <button class="btn text-light">BLOG</button>
+                    <button class="btn text-light">PRESENTATION</button>
+                    <button class="btn text-light">DISCOVER</button>
+                    <button class="btn text-light">PAYMENT</button>
+                    <button class="btn text-light">CONTACT US</button>
+                </div>
+                <div>
+                    <p style="margin: 0; color: rgb(150, 150, 150);">Copyright &copy; 2026 Creative Tim All Rights
+                        Reserved.</p>
+                </div>
+            </div>
+            <br>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
