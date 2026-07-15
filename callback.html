@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>&#128512;</p> 
+    <script>
+        function parent(name){
+            console.log("Hello, " + name);
+        }
+
+        function child(callback){
+            callback("abc xyz");
+        }
+
+        child(parent);
+
+
+
+
+        console.log("");
+        function a(){
+            console.log("Parent Function");
+            console.log(callback(a,b));
+        }
+        function b(){
+            return a + b;
+        }
+        a(b, 2, 3);
+
+    </script>
+</body>
+</html>
